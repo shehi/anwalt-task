@@ -8,13 +8,13 @@ use App\Domain\ImageService;
 
 class TransformationRequestor
 {
-    public string $filename;
+    public readonly string $filename;
 
-    public string $mime;
+    public readonly string $mime;
 
-    public string $cachePath;
+    public readonly string $cachePath;
 
-    public string $cacheUri;
+    public readonly string $cacheUri;
 
     public function __construct(public string $filepath, public string $transformation, public int $width, public int $height)
     {

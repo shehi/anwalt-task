@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace App\Infrastructure;
 
-use App\Application\AbstractTransformer;
 use App\Application\TransformationRequestor;
 use Imagick;
 use ImagickException;
 
-final class ImagickTransformer extends AbstractTransformer
+final class ImagickTransformer implements TransformerInterface
 {
     /**
      * @throws ImagickException

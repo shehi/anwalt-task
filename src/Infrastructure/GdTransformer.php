@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace App\Infrastructure;
 
-use App\Application\AbstractTransformer;
 use App\Application\TransformationRequestor;
 use GdImage;
 use UnexpectedValueException;
 
-final class GdTransformer extends AbstractTransformer
+final class GdTransformer implements TransformerInterface
 {
     public function c_crop(TransformationRequestor $transformationReq): void
     {
